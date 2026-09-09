@@ -99,8 +99,11 @@ def vigenere_decrypt(ciphertext, key):
 
     return result
 
-ciphertext = vigenere_encrypt(plaintext, key)
-plaintext = vigenere_decrypt(ciphertext, key)
+if not key.isalpha():
+    print("Key must contain only alphabets.")
+else:
+    ciphertext = vigenere_encrypt(plaintext, key)
+    plaintext = vigenere_decrypt(ciphertext, key)
 
-print(f"cihpertext = ", ciphertext)
-print(f"plaintext = ", plaintext)
+    print("Ciphertext =", ciphertext)
+    print("Plaintext =", plaintext)
