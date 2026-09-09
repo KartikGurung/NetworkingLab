@@ -17,9 +17,6 @@ def ceaser_encrypt(text, shift):
 
     return result
 
-print(ceaser_encrypt(text, shift))
-
-
 def ceaser_decrypt(text, shift):
     result = ""
     shift = shift % 26
@@ -34,8 +31,11 @@ def ceaser_decrypt(text, shift):
 
     return result
 
-print(ceaser_encrypt(text, shift))
+ciphertext = ceaser_encrypt(text, shift)
+plaintext = ceaser_decrypt(ciphertext, shift)
 
+print("Ciphertext =", ciphertext)
+print("Plaintext =", plaintext)
 
 # Vigenere Cipher Encryption and Decryption
 
