@@ -20,7 +20,7 @@ def ceaser_encrypt(text, shift):
 print(ceaser_encrypt(text, shift))
 
 
-def ceaser_encrypt(text, shift):
+def ceaser_decrypt(text, shift):
     result = ""
     shift = shift % 26
 
