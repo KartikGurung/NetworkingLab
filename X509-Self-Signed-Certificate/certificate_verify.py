@@ -58,11 +58,9 @@ if hash1 == hash2:
     print("\nPublic Key: MATCH")
 else:
     print("\nPublic Key: MISMATCH")
-
-
-# -----------------------------
+    
+    
 # Certificate Integrity
-# -----------------------------
 
 certificate_hash = hashlib.sha256(certificate_data).hexdigest()
 
